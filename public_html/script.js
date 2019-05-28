@@ -25,6 +25,18 @@
 //
 //combineNumbers(23)();
 
-(function (age) {
-    console.log(age);
-})(22);
+//(function (age) {
+//    console.log(age);
+//})(22);
+
+
+var someData = {
+    name: "Peter",
+    age: 32,
+    married: true,
+    printName: function () {
+        console.log("His name is " + this.name);
+    }
+};
+
+someData.printName();
